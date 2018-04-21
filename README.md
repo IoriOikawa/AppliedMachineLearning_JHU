@@ -165,7 +165,7 @@ And, plotting data importance can be displayed using varImpPlot():
 > varImpPlot(fitModel)
 ```
 
-![螢幕快照 2018-04-20 14.18.08](/Users/atorsirakawa/Desktop/Screen Shots/螢幕快照 2018-04-20 14.18.08.png)
+![螢幕快照 2018-04-20 14.18.08](figures/螢幕快照 2018-04-20 14.18.08.png)
 
 Using the Accuracy and Gini graphs above, the top 10 variables can be listed for model building now.
 If the accuracy of the resulting model is acceptable, limiting the number of variables is a good idea to ensure readability and interpretability of the model.
@@ -204,7 +204,7 @@ We can identify an interesting relationship between *roll_belt* and *magnet_dumb
 > qplot(roll_belt, magnet_dumbbell_y, colour = classe, data = train1)
 ```
 
-![螢幕快照 2018-04-20 17.00.31](/Users/atorsirakawa/Desktop/Screen Shots/螢幕快照 2018-04-20 17.00.31.png)
+![螢幕快照 2018-04-20 17.00.31](figures/螢幕快照 2018-04-20 17.00.31.png)
 
 and another peek...
 
@@ -212,7 +212,7 @@ and another peek...
 > qplot(roll_belt, magnet_dumbbell_y, colour = classe, data = train2)
 ```
 
-![螢幕快照 2018-04-20 17.00.48](/Users/atorsirakawa/Desktop/Screen Shots/螢幕快照 2018-04-20 17.00.48.png)
+![螢幕快照 2018-04-20 17.00.48](figures/螢幕快照 2018-04-20 17.00.48.png)
 
 This graph suggests that we could probably categorize the data into groups based on *roll_belt* values.
 
@@ -227,7 +227,7 @@ Loading required package: rpart
 
 And here is the decision tree:
 
-![螢幕快照 2018-04-20 17.08.03](/Users/atorsirakawa/Desktop/Screen Shots/螢幕快照 2018-04-20 17.08.03.png)
+![螢幕快照 2018-04-20 17.08.03](figures/螢幕快照 2018-04-20 17.08.03.png)
 
 Useful it does, yet we will not investigate by tree classifiers from no on,
 for the Random Forest algorithm will prove the very satisfactory.
@@ -350,5 +350,5 @@ submit <- data.frame(problem_id = testing$problem_id, classe = predictions)
 
 And the result, with no surprise, is a solid 20/20:
 
-![螢幕快照 2018-04-21 12.38.57](/Users/atorsirakawa/Desktop/Screen Shots/螢幕快照 2018-04-21 12.38.57.png)
+![螢幕快照 2018-04-21 12.38.57](figures/螢幕快照 2018-04-21 12.38.57.png)
 
